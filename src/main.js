@@ -128,8 +128,8 @@ class CloudHightMap extends TarrainHeightmap  {
 
 }
 
-let tarrainHeightMap = new TarrainHeightmap(6)
-let coluds = new CloudHightMap(4, 3, 100)
+let tarrainHeightMap = new TarrainHeightmap(6, Math.floor(Math.random() * 99999))
+let coluds = new CloudHightMap(4, Math.floor(Math.random() * 9999), 100)
 
 
 let currentTime = 0
