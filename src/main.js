@@ -174,16 +174,16 @@ window.addEventListener( 'wheel', e => {
    tarrainHeightMap.getHeightMap(bc,bc,  xoff, yoff)
 })
 let dragging = false;
-c.canvas.addEventListener('mousedown', e => {
+c.canvas.addEventListener('pointerdown', e => {
     dragging = true;
     
 })
-window.addEventListener('mouseup', e => {
+window.addEventListener('pointerup', e => {
     dragging = false
 })
 let moveSensetivity = .5
 let moveSensetivity2 = .05
-window.addEventListener('mousemove',e => {
+window.addEventListener('pointermove',e => {
     if(dragging) {
 
         xoff -= e.movementX * moveSensetivity
